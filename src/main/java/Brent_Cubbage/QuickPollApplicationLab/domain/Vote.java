@@ -1,6 +1,6 @@
-package io.zipcoder.tc_spring_poll_application.Entitys;
+package Brent_Cubbage.QuickPollApplicationLab.domain;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Vote {
@@ -30,4 +30,3 @@ public class Vote {
         this.option = option;
     }
 }
-

@@ -1,8 +1,8 @@
-package io.zipcoder.tc_spring_poll_application.Entitys;
+package Brent_Cubbage.QuickPollApplicationLab.domain;
 
+import jakarta.persistence.*;
 import org.springframework.core.annotation.Order;
 
-import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -11,7 +11,7 @@ public class Poll {
     @Id
     @GeneratedValue
     @Column(name = "POLL_ID")
-    private Long poll;
+    private Long id;
 
     @Column(name = "QUESTION")
     private String question;
@@ -21,12 +21,12 @@ public class Poll {
     @OrderBy
     private Set<Option> options;
 
-    public Long getPoll() {
-        return poll;
+    public Long getId() {
+        return id;
     }
 
-    public void setPoll(Long poll) {
-        this.poll = poll;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getQuestion() {

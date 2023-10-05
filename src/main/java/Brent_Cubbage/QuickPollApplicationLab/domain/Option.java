@@ -1,6 +1,9 @@
-package io.zipcoder.tc_spring_poll_application.Entitys;
+package Brent_Cubbage.QuickPollApplicationLab.domain;
 
-import javax.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Option {
@@ -12,7 +15,6 @@ public class Option {
 
     @Column(name = "OPTION_VALUE")
     private String value;
-
 
 
     public Long getId() {
